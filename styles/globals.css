@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-image: url('https://raw.githubusercontent.com/adrianhajdin/project_graphql_blog/main/public/bg.jpg');
-    
+@layer{
+    body{
+        @apply bg-slate-600 
+     }
 }

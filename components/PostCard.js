@@ -1,6 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const PostCard = ({post}) => {
   return (
@@ -23,11 +24,13 @@ const PostCard = ({post}) => {
         {moment(post.createdAt).format('MMMM DD,YYYY')}</span>
         </div>
         <div className="flex  items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8 mt-5 lg:mt-0">
-        <img 
+        <Image
         alt={post.author.name}
         height='30px'
         width='30px'
-         src={post.author.photo.url}/>
+         src={post.author.photo.url}
+         className='object-cover rounded-md'
+         />
          <p className='inline align-middle text-gray-600 font-serif  font-bold ml-2 text-lg'>{post.author.name}</p>
         </div>
        </div>
