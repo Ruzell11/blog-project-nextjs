@@ -17,7 +17,7 @@ const Header = () => {
             <div className="border-b w-full inline-block border-black border-7 py-8">
                 <div className="md:float-left block">
                     <Link href='/'>
-                        <span className='cursor-pointer font-bold text-4xl text-black'>
+                        <span className='cursor-pointer font-bold text-4xl text-white font-serif'>
                             Daily News</span>
 
                     </Link>

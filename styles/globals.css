@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer{
-    body{
-        @apply bg-slate-600 
-     }
+        body{
+            @apply bg-[#383535];
+        }
 }
