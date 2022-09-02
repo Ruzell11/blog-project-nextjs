@@ -4,6 +4,6 @@
 
 @layer{
         body{
-            @apply bg-[#383535];
+            @apply bg-gradient-to-r from-cyan-500 to-blue-500 
         }
 }
