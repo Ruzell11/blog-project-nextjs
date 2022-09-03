@@ -124,3 +124,12 @@ export const getCatergories = async () => {
   const result = await request(graphqlAPI, query)
   return result.catergories;
 }
+
+
+export const submitComment = async (obj) => {
+  const result = await fetch('/api/comments', {
+    method:'POST',
+    body:JSON.stringify(obj),
+  })
+  return result.jsonn();
+}
