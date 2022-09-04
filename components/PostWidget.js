@@ -25,7 +25,7 @@ const PostWidget = ({ catergories, slug }) => {
       </h1>
       {relatedPost.map((post) => (
         <div key={post.title} className='flex items-center w-full space-x-2 '>
-          <div className="w-16 flex-none  ">
+          <div className="w-16 flex-none">
             <img
               alt={post.title}
               height='60px'
@@ -34,7 +34,7 @@ const PostWidget = ({ catergories, slug }) => {
               src={post.featuredImage.url}
             />
           </div>
-          <div className='flex-grow ml-4'>
+          <div className='flex-grow ml-5'>
             <p className='text-gray-700 text-sm'>{moment(post.createdAt).format('MMMM DD,YYYY')}</p>
             <Link href={`/post/${post.slug}`} key={post.title} >
               <span className='text-black cursor-pointer border-b font-semibold'>{post.title}</span>
